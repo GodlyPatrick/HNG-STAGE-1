@@ -1,9 +1,12 @@
 # 🧠 HNG Stage 1 — String Analyzer API
 
-This project was built as part of the **HNG 13 Backend Internship (Stage 1 Task)**.  
-It’s a RESTful API that receives a string, analyzes it, computes specific properties, stores the result in MongoDB, and allows retrieval, filtering, and deletion through various endpoints.
+ 
+The string analyzer API is a RESTful API that receives a string, analyzes it, computes specific properties, stores the result in MongoDB, and allows retrieval, filtering, and deletion through various endpoints.
 
 ---
+## 🚀 Live Demo
+
+https://hng-stage-1-string-analyzer-project.up.railway.app
 
 ## 🚀 Features
 
@@ -98,9 +101,8 @@ Local Base URL:
 
 
 http://localhost:5000/api
+
 Deployed Base URL (example):
-
-
 
 https://your-app-name.up.railway.app/api
 
@@ -157,6 +159,7 @@ json
 Copy code
 { "error": "String not found" }
 
+
 3️⃣ Get All Strings with Filtering
 GET /strings?is_palindrome=true&min_length=5&max_length=20&word_count=1
 
@@ -174,6 +177,8 @@ json
     "word_count": "1"
   }
 }
+
+
 4️⃣ Delete String
 DELETE /strings/:value
 
@@ -187,10 +192,11 @@ Empty response body.
 💾 Example .env File
 
 
-PORT=5000
+PORT=3000
 MONGODB_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net/hng_stage1
 
 ☁️ Deployment Guide (Railway)
+
 Step 1 — Push your code to GitHub
 Make sure your repo is public and contains:
 
@@ -217,7 +223,7 @@ Go to Settings → Variables
 
 Add:
 
-PORT = 3000
+PORT = 3000 
 
 MONGODB_URL = your MongoDB Atlas connection string
 
@@ -225,7 +231,7 @@ Step 5 — Deploy
 Once variables are set, click “Deploy” again.
 You’ll get a live URL like:
 
-https://your-app-name.up.railway.app
+https://hng-stage-1-string-analyzer-project.up.railway.app
 
 
 🧪 Testing
@@ -241,7 +247,7 @@ POST http://localhost:5000/api/strings
 
 🧑🏽‍💻 Author
 
-👤 **[Godly Patrick Udoh]**
+👤 *[Godly Patrick Udoh]
 - Email: [Udohgary1999@gmail.com]
 - LinkedIn: [(http://www.linkedin.com/in/godlypatrickudoh)]
 - GitHub: [@GodlyPatrick](https://github.com/GodlyPatrick)
@@ -261,4 +267,4 @@ Learn more about HNG:
 
 ---
 
-**Built with ❤️ during HNG13 Internship**
+*Built with ❤️ during HNG13 Internship*
