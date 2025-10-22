@@ -77,11 +77,12 @@ npm install
 3️⃣ Create your .env file
 Create a .env file in the project root:
 
-ini
+
 
 PORT=3000
 MONGODB_URL=your_mongodb_connection_string
 Or copy from .env.example and edit accordingly.
+Note You can change the port number if needed
 
 4️⃣ Start the server
 bash
@@ -89,19 +90,16 @@ Copy code
 npm run dev
 When successful, you’ll see:
 
-arduino
-Copy code
 ✅ MongoDB connected successfully
 🚀 Server running on port 5000
 🌐 Base URL
 Local Base URL:
 
-bash
-Copy code
+
 http://localhost:5000/api
 Deployed Base URL (example):
 
-arduino
+
 
 https://your-app-name.up.railway.app/api
 
@@ -113,7 +111,7 @@ POST /strings
 Request Body:
 
 json
-Copy code
+
 {
   "value": "racecar"
 }
@@ -146,7 +144,7 @@ GET /strings/:value
 
 Example:
 
-bash
+
 
 GET /api/strings/racecar
 Response (200 OK):
@@ -157,6 +155,7 @@ Response (404 Not Found):
 json
 Copy code
 { "error": "String not found" }
+
 3️⃣ Get All Strings with Filtering
 GET /strings?is_palindrome=true&min_length=5&max_length=20&word_count=1
 
@@ -179,15 +178,14 @@ DELETE /strings/:value
 
 Example:
 
-bash
-Copy code
+
 DELETE /api/strings/racecar
 Response (204 No Content):
 Empty response body.
 
 💾 Example .env File
-env
-Copy code
+
+
 PORT=5000
 MONGODB_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net/hng_stage1
 
@@ -218,7 +216,7 @@ Go to Settings → Variables
 
 Add:
 
-PORT = 5000
+PORT = 3000
 
 MONGODB_URL = your MongoDB Atlas connection string
 
@@ -236,8 +234,6 @@ You can test all endpoints locally using Postman or cURL.
 
 Example:
 
-bash
-Copy code
 POST http://localhost:5000/api/strings
 
 
@@ -265,6 +261,3 @@ Learn more about HNG:
 ---
 
 **Built with ❤️ during HNG13 Internship**
-
-📝 License
-This project is licensed under the MIT License — free to use, modify, and distribute.
