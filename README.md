@@ -24,8 +24,9 @@ It’s a RESTful API that receives a string, analyzes it, computes specific prop
 ---
 
 ## 🧩 Folder Structure
-
+```
 HNG-STAGE-1/
+
 │── src/
 │ ├── controller/
 │ │ └── stringController.js
@@ -46,8 +47,7 @@ HNG-STAGE-1/
 │── node_modules/
 │── README.md
 
-yaml
-Copy code
+
 
 ---
 
@@ -62,6 +62,7 @@ Copy code
 | Environment Config | Dotenv |
 | Middleware | CORS, JSON parser |
 
+```
 ---
 
 ## ⚙️ Installation and Setup
