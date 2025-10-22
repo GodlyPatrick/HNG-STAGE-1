@@ -3,10 +3,10 @@ const stringRouter = Router();
 import { createString, getString, getAllStrings, deleteString, filterByNaturalLanguage } from '../controller/stringController.js';
 // Routes for string operations
 stringRouter
-.post('/strings', createString)
-.get('/strings/:value', getString)
-.get('/strings', getAllStrings)
-.get('/strings/filter/natural-language', filterByNaturalLanguage)
-.delete('/strings/:value', deleteString);
+.post('/', createString)
+.get('/:value', getString)
+.get('/', getAllStrings)
+.get('/filter/natural-language', filterByNaturalLanguage)
+.delete('/:value', deleteString);
 
 export default stringRouter;

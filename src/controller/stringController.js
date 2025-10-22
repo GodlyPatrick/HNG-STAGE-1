@@ -111,8 +111,8 @@ export const deleteString = async (req, res) => {
     if (!deleted) {
       return res.status(404).json({ error: 'String not found' });
     }
-
-    return res.status(204).json({ message: "string deleted successfully! ✅" });
+console.log('Deleted string:', deleted);
+    return res.status(204).send();
   } catch (error) {
     console.error('Error deleting string:', error);
     return res.status(500).json({ error: 'Internal server error' });

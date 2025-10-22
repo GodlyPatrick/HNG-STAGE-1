@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/api', stringRouter);
+app.use('/strings', stringRouter);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to HNG Stage 1 String Analyzer API 🚀' });
